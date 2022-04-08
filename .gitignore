@@ -24,4 +24,7 @@ __pycache__
 *.blg
 *.bbl
 
+*.tex
+*.pdf
+
 *.mod
