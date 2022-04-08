@@ -155,5 +155,5 @@ def plot_nested_pie():
     save_figure('yt_pie')
 
 if __name__ == '__main__':
-    #get_share_of_available_videos ()
+
     plot_nested_pie()
