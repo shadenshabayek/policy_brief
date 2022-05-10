@@ -31,13 +31,13 @@ def arrange_plot(ax, df, website):
     plt.xticks(rotation = 45)
     ax.xaxis.set_tick_params(length=0)
 
-    if website == 'ei':
-        plt.axvspan(np.datetime64('2020-04-14'), np.datetime64('2020-07-07'),
-                ymin=0, ymax=200000, facecolor='k', alpha=0.05)
-
-    elif website == 'reseauinternational.net':
-        plt.axvspan(np.datetime64('2020-03-24'), np.datetime64('2020-06-01'),
-                        ymin=0, ymax=200000, facecolor='k', alpha=0.05)
+    # if website == 'ei':
+    #     plt.axvspan(np.datetime64('2020-04-14'), np.datetime64('2020-07-07'),
+    #             ymin=0, ymax=200000, facecolor='k', alpha=0.05)
+    #
+    # elif website == 'reseauinternational.net':
+    #     plt.axvspan(np.datetime64('2020-03-24'), np.datetime64('2020-06-01'),
+    #                     ymin=0, ymax=200000, facecolor='k', alpha=0.05)
 
     plt.xlim(np.min(df['date']), np.max(df['date']))
 

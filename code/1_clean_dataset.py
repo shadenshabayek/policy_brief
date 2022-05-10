@@ -70,7 +70,7 @@ def keep_top_99_EU (df):
                as_index = False).size().sort_values(by = 'size', ascending = False)
 
     list_top_EU_countries = nb_links[nb_links['size'] > 99]['public_shares_top_country'].to_list()
-
+    
     remove = ['UA', 'RS']
     list_EU_countries = list(set(list_top_EU_countries) - set(remove))
     df = df[df['public_shares_top_country'].isin(list_EU_countries)]

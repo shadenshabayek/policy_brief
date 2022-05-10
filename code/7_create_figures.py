@@ -54,7 +54,7 @@ def create_donut(x, y, filename, figure_name, title):
     kw = dict(arrowprops=dict(arrowstyle="-"),
               bbox=bbox_props, zorder=0, va="center")
 
-    plt.text(0, 0, "Condor\nDataset", ha='center', va='center', fontsize=22)
+    plt.text(0, 0, "Third-Party\nFact-checked URLs\n in the\n Condor Dataset\n(June 2021)", ha='center', va='center', fontsize=14)
 
     for i, p in enumerate(wedges):
 
