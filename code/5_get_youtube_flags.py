@@ -4,8 +4,8 @@ import time
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-from webdriver_manager.chrome import ChromeDriverManager
 from utils import import_data
+from webdriver_manager.chrome import ChromeDriverManager
 
 def get_inactive_video_message(video_id):
 
@@ -29,9 +29,10 @@ def get_inactive_video_message(video_id):
         information_panel_content = ''
 
     browser.quit()
-    print(unavailable_video_message)
-    print(removed_video_message)
-    print(information_panel_content)
+
+    # print(unavailable_video_message)
+    # print(removed_video_message)
+    # print(information_panel_content)
 
     return unavailable_video_message, removed_video_message, information_panel_content
 
@@ -51,7 +52,7 @@ def collect_messages():
 
     list_video_id, list_url, list_published_at, list_title = get_videos()
 
-    with open('./data/messages_videos_youtube_condor_EU_false_links_active_2022_04_04.csv', "w+") as csv_file:
+    with open('./data/messages_videos_youtube_condor_EU_false_links_active_2022_04_04.csv', 'w+') as csv_file:
 
         writer = csv.writer(csv_file, delimiter=',')
         writer.writerow(['video_id',
@@ -64,9 +65,7 @@ def collect_messages():
 
         l = len(list_video_id)
         for i in range(0,l):
-
             a, b, c = get_inactive_video_message(list_video_id[i])
-
             writer.writerow([list_video_id[i],
                              a,
                              b,

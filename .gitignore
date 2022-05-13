@@ -28,3 +28,5 @@ __pycache__
 *.pdf
 
 *.mod
+
+!data/country_codes_wikipedia.csv

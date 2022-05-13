@@ -1,0 +1,263 @@
+continent_code,country_code,country_name
+AS,AF,"Afghanistan, Islamic Republic of"
+EU,AL,"Albania, Republic of"
+AN,AQ,Antarctica (the territory South of 60 deg S)
+AF,DZ,"Algeria, People's Democratic Republic of"
+OC,AS,American Samoa
+EU,AD,"Andorra, Principality of"
+AF,AO,"Angola, Republic of"
+NA,AG,Antigua and Barbuda
+AS,AZ,"Azerbaijan, Republic of"
+EU,AZ,"Azerbaijan, Republic of"
+SA,AR,"Argentina, Argentine Republic"
+OC,AU,"Australia, Commonwealth of"
+EU,AT,"Austria, Republic of"
+NA,BS,"Bahamas, Commonwealth of the"
+AS,BH,"Bahrain, Kingdom of"
+AS,BD,"Bangladesh, People's Republic of"
+AS,AM,"Armenia, Republic of"
+EU,AM,"Armenia, Republic of"
+NA,BB,Barbados
+EU,BE,"Belgium, Kingdom of"
+NA,BM,Bermuda
+AS,BT,"Bhutan, Kingdom of"
+SA,BO,"Bolivia, Plurinational State of"
+EU,BA,Bosnia and Herzegovina
+AF,BW,"Botswana, Republic of"
+AN,BV,Bouvet Island (Bouvetoya)
+SA,BR,"Brazil, Federative Republic of"
+NA,BZ,Belize
+AF,IO,British Indian Ocean Territory
+OC,SB,Solomon Islands
+NA,VG,British Virgin Islands
+AS,BN,"Brunei, Nation of, the Abode of Peace"
+EU,BG,"Bulgaria, Republic of"
+AS,MM,"Myanmar, Union of"
+AF,BI,"Burundi, Republic of"
+EU,BY,"Belarus, Republic of"
+AS,KH,"Cambodia, Kingdom of"
+AF,CM,"Cameroon, Republic of"
+NA,CA,Canada
+AF,CV,"Cape Verde, Republic of"
+NA,KY,Cayman Islands
+AF,CF,Central African Republic
+AS,LK,"Sri Lanka, Democratic Socialist Republic of"
+AF,TD,"Chad, Republic of"
+SA,CL,"Chile, Republic of"
+AS,CN,"China, People's Republic of"
+AS,TW,Taiwan
+AS,CX,Christmas Island
+AS,CC,Cocos (Keeling) Islands
+SA,CO,"Colombia, Republic of"
+AF,KM,"Comoros, Union of the"
+AF,YT,"Mayotte, Department of"
+AF,CG,"Congo, Republic of the"
+AF,CD,"Congo, Democratic Republic of the"
+OC,CK,Cook Islands
+NA,CR,"Costa Rica, Republic of"
+EU,HR,"Croatia, Republic of"
+NA,CU,"Cuba, Republic of"
+AS,CY,"Cyprus, Republic of"
+EU,CY,"Cyprus, Republic of"
+EU,CZ,Czech Republic
+AF,BJ,"Benin, Republic of"
+EU,DK,"Denmark, Kingdom of"
+NA,DM,"Dominica, Commonwealth of"
+NA,DO,Dominican Republic
+SA,EC,"Ecuador, Republic of"
+NA,SV,"El Salvador, Republic of"
+AF,GQ,"Equatorial Guinea, Republic of"
+AF,ET,"Ethiopia, Federal Democratic Republic of"
+AF,ER,"Eritrea, State of"
+EU,EE,"Estonia, Republic of"
+EU,FO,Faroe Islands
+SA,FK,Falkland Islands (Malvinas)
+AN,GS,South Georgia and the South Sandwich Islands
+OC,FJ,"Fiji, Republic of"
+EU,FI,"Finland, Republic of"
+EU,AX,�land Islands
+EU,FR,"France, French Republic"
+SA,GF,French Guiana
+OC,PF,French Polynesia
+AF,TF,French Southern Territories
+AF,DJ,"Djibouti, Republic of"
+AF,GA,"Gabon, Gabonese Republic"
+AS,GE,Georgia
+EU,GE,Georgia
+AF,GM,"Gambia, Republic of the"
+EU,DE,"Germany, Federal Republic of"
+AF,GH,"Ghana, Republic of"
+EU,GI,Gibraltar
+OC,KI,"Kiribati, Republic of"
+EU,GR,"Greece, Hellenic Republic"
+NA,GL,Greenland
+NA,GD,Grenada
+NA,GP,Guadeloupe
+OC,GU,Guam
+NA,GT,"Guatemala, Republic of"
+AF,GN,"Guinea, Republic of"
+SA,GY,"Guyana, Co-operative Republic of"
+NA,HT,"Haiti, Republic of"
+AN,HM,Heard Island and McDonald Islands
+EU,VA,Holy See (Vatican City State)
+NA,HN,"Honduras, Republic of"
+AS,HK,"Hong Kong, Special Administrative Region of China"
+EU,HU,"Hungary, Republic of"
+EU,IS,"Iceland, Republic of"
+AS,IN,"India, Republic of"
+AS,ID,"Indonesia, Republic of"
+AS,IR,"Iran, Islamic Republic of"
+AS,IQ,"Iraq, Republic of"
+EU,IE,Ireland
+AS,IL,"Israel, State of"
+EU,IT,"Italy, Italian Republic"
+AF,CI,"C™te d'Ivoire, Republic of"
+NA,JM,Jamaica
+AS,JP,Japan
+AS,KZ,"Kazakhstan, Republic of"
+EU,KZ,"Kazakhstan, Republic of"
+AS,JO,"Jordan, Hashemite Kingdom of"
+AF,KE,"Kenya, Republic of"
+AS,KP,"Korea, Democratic People's Republic of"
+AS,KR,"Korea, Republic of"
+EU,XK,"Kosovo, Republic of"
+AS,KW,"Kuwait, State of"
+AS,KG,Kyrgyz Republic
+AS,LA,Lao People's Democratic Republic
+AS,LB,"Lebanon, Lebanese Republic"
+AF,LS,"Lesotho, Kingdom of"
+EU,LV,"Latvia, Republic of"
+AF,LR,"Liberia, Republic of"
+AF,LY,"Libya, State of"
+EU,LI,"Liechtenstein, Principality of"
+EU,LT,"Lithuania, Republic of"
+EU,LU,"Luxembourg, Grand Duchy of"
+AS,MO,"Macao, Special Administrative Region of China"
+AF,MG,"Madagascar, Republic of"
+AF,MW,"Malawi, Republic of"
+AS,MY,Malaysia
+AS,MV,"Maldives, Republic of"
+AF,ML,"Mali, Republic of"
+EU,MT,"Malta, Republic of"
+NA,MQ,Martinique
+AF,MR,"Mauritania, Islamic Republic of"
+AF,MU,"Mauritius, Republic of"
+NA,MX,"Mexico, United Mexican States"
+EU,MC,"Monaco, Principality of"
+AS,MN,Mongolia
+EU,MD,"Moldova, Republic of"
+EU,ME,Montenegro
+NA,MS,Montserrat
+AF,MA,"Morocco, Kingdom of"
+AF,MZ,"Mozambique, Republic of"
+AS,OM,"Oman, Sultanate of"
+AF,NA,"Namibia, Republic of"
+OC,NR,"Nauru, Republic of"
+AS,NP,"Nepal, Federal Democratic Republic of"
+EU,NL,"Netherlands, Kingdom of the"
+NA,CW,Cura�ao
+NA,AW,Aruba
+NA,SX,Sint Maarten (Netherlands)
+NA,BQ,"Bonaire, Sint Eustatius and Saba"
+OC,NC,New Caledonia
+OC,VU,"Vanuatu, Republic of"
+OC,NZ,New Zealand
+NA,NI,"Nicaragua, Republic of"
+AF,NE,"Niger, Republic of"
+AF,NG,"Nigeria, Federal Republic of"
+OC,NU,Niue
+OC,NF,Norfolk Island
+EU,NO,"Norway, Kingdom of"
+OC,MP,"Northern Mariana Islands, Commonwealth of the"
+NA,UM,United States Minor Outlying Islands
+OC,UM,United States Minor Outlying Islands
+OC,FM,"Micronesia, Federated States of"
+OC,MH,"Marshall Islands, Republic of the"
+OC,PW,"Palau, Republic of"
+AS,PK,"Pakistan, Islamic Republic of"
+AS,PS,"Palestine, State of"
+NA,PA,"Panama, Republic of"
+OC,PG,"Papua New Guinea, Independent State of"
+SA,PY,"Paraguay, Republic of"
+SA,PE,"Peru, Republic of"
+AS,PH,"Philippines, Republic of the"
+OC,PN,Pitcairn Islands
+EU,PL,"Poland, Republic of"
+EU,PT,"Portugal, Portuguese Republic"
+AF,GW,"Guinea-Bissau, Republic of"
+AS,TL,"Timor-Leste, Democratic Republic of"
+NA,PR,"Puerto Rico, Commonwealth of"
+AS,QA,"Qatar, State of"
+AF,RE,Reunion
+EU,RO,Romania
+AS,RU,Russian Federation
+EU,RU,Russian Federation
+AF,RW,"Rwanda, Republic of"
+NA,BL,Saint Barthelemy
+AF,SH,Saint Helena
+NA,KN,"Saint Kitts and Nevis, Federation of"
+NA,AI,Anguilla
+NA,LC,Saint Lucia
+NA,MF,Saint Martin
+NA,PM,Saint Pierre and Miquelon
+NA,VC,Saint Vincent and the Grenadines
+EU,SM,"San Marino, Republic of"
+AF,ST,"S‹o TomŽ and Pr’ncipe, Democratic Republic of"
+AS,SA,"Saudi Arabia, Kingdom of"
+AF,SN,"Senegal, Republic of"
+EU,RS,"Serbia, Republic of"
+AF,SC,"Seychelles, Republic of"
+AF,SL,"Sierra Leone, Republic of"
+AS,SG,"Singapore, Republic of"
+EU,SK,Slovakia (Slovak Republic)
+AS,VN,"Vietnam, Socialist Republic of"
+EU,SI,"Slovenia, Republic of"
+AF,SO,"Somalia, Federal Republic of"
+AF,ZA,"South Africa, Republic of"
+AF,ZW,"Zimbabwe, Republic of"
+EU,ES,"Spain, Kingdom of"
+AF,SS,"South Sudan, Republic of"
+AF,SD,"Sudan, Republic of the"
+AF,EH,Sahrawi Arab Democratic Republic
+SA,SR,"Suriname, Republic of"
+EU,SJ,Svalbard & Jan Mayen Islands
+AF,SZ,"Eswatini, Kingdom of"
+EU,SE,"Sweden, Kingdom of"
+EU,CH,"Switzerland, Swiss Confederation"
+AS,SY,Syrian Arab Republic
+AS,TJ,"Tajikistan, Republic of"
+AS,TH,"Thailand, Kingdom of"
+AF,TG,"Togo, Togolese Republic"
+OC,TK,Tokelau
+OC,TO,"Tonga, Kingdom of"
+NA,TT,"Trinidad and Tobago, Republic of"
+AS,AE,United Arab Emirates
+AF,TN,"Tunisia, Republic of"
+AS,TR,"Turkey, Republic of"
+EU,TR,"Turkey, Republic of"
+AS,TM,Turkmenistan
+NA,TC,Turks and Caicos Islands
+OC,TV,Tuvalu
+AF,UG,"Uganda, Republic of"
+EU,UA,Ukraine
+EU,MK,"North Macedonia, Republic of"
+AF,EG,"Egypt, Arab Republic of"
+AS,EG,"Egypt, Arab Republic of"
+EU,GB,United Kingdom of Great Britain & Northern Ireland
+EU,GG,"Guernsey, Bailiwick of"
+EU,JE,"Jersey, Bailiwick of"
+EU,IM,Isle of Man
+AF,TZ,"Tanzania, United Republic of"
+NA,US,United States of America
+NA,VI,United States Virgin Islands
+AF,BF,Burkina Faso
+SA,UY,"Uruguay, Oriental Republic of"
+AS,UZ,"Uzbekistan, Republic of"
+SA,VE,"Venezuela, Bolivarian Republic of"
+OC,WF,Wallis and Futuna
+OC,WS,"Samoa, Independent State of"
+AS,YE,Yemen
+AF,ZM,"Zambia, Republic of"
+AS,XD,United Nations Neutral Zone
+AS,XS,Spratly Islands
+OC,XX,Disputed Territory

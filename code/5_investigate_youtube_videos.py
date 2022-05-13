@@ -190,18 +190,12 @@ def plot_engagement(df1, df2):
         [0.9], [np.median(df2['view_count'])],
         color='green', edgecolor='black', width=0.8, alpha=0.3
     )
-    # low_before, high_before = calculate_confidence_interval_median(df1['total_engagement'].values)
-    # ax0.plot([0.1, 0.1], [low_before, high_before], color='black', linewidth=0.9)
-    # low_after, high_after = calculate_confidence_interval_median(df2['total_engagement'].values)
-    # ax0.plot([0.9, 0.9], [low_after, high_after], color='black', linewidth=0.9)
-    ax0.set_xticks([0, 1]),
+        ax0.set_xticks([0, 1]),
     ax0.set_xticklabels(['without', 'with'])
     ax0.set_xlabel('information panel')
     ax0.tick_params(axis='x', which='both', length=0)
     ax0.set_xlim(-.5, 1.5)
     ax0.set_ylabel('median view count')
-    #ax0.set_ylim(-.1, 15)
-    #ax0.set_yticks([0, 5, 10, 15, 20])
     ax0.set_frame_on(False)
 
     ax1.bar(
@@ -212,27 +206,21 @@ def plot_engagement(df1, df2):
         [0.9], [np.median(df2['like_count'])],
         color='green', edgecolor='black', width=0.8, alpha=0.3
     )
-    # low_before, high_before = calculate_confidence_interval_median(df3['total_engagement'].values)
-    # ax1.plot([0.1, 0.1], [low_before, high_before], color='black', linewidth=0.9)
-    # low_after, high_after = calculate_confidence_interval_median(df4['total_engagement'].values)
-    # ax1.plot([0.9, 0.9], [low_after, high_after], color='black', linewidth=0.9)
+
     ax1.set_xticks([0, 1]),
     ax1.set_xticklabels(['without', 'with'])
     ax1.set_xlabel('information panel')
     ax1.tick_params(axis='x', which='both', length=0)
     ax1.set_xlim(-.5, 1.5)
     ax1.set_ylabel('median like count')
-    #ax1.set_ylim(-.1, 20)
     ax1.set_frame_on(False)
 
-    #fig.suptitle("{} Facebook groups \n self-declared as being under reduced distribution".format(len(df1)))
     fig.tight_layout()
     save_figure('figure_engagement_videos_yt_median')
 
 if __name__ == '__main__':
 
     #plot_nested_pie()
-    #get_list_available()
     df_engagement_1, df_engagement_2 = get_list_available()
     print(df_engagement_1)
     print(df_engagement_2)

@@ -15,7 +15,7 @@ def create_pie_figure(x, y, filename, figure_name, title):
     ax = fig.add_axes([0,0,1,1])
     ax.axis('equal')
 
-    labels= df[x].to_list()
+    labels = df[x].to_list()
     categories = df[y].to_list()
 
     cmap = plt.get_cmap('coolwarm')
@@ -24,9 +24,9 @@ def create_pie_figure(x, y, filename, figure_name, title):
     ax.pie(
     categories,
     labels = labels,
-    autopct='%.0f%%',
-    textprops={'fontsize': 29},
-    colors=colors,
+    autopct = '%.0f%%',
+    textprops = {'fontsize': 29},
+    colors = colors,
     rotatelabels = True)
 
     save_figure(figure_name)
@@ -77,6 +77,6 @@ def main():
                       figure_name = 'donut_aggregate_links_condor',
                       title = '')
 
-
 if __name__ == '__main__':
+
     main()
