@@ -263,11 +263,11 @@ def create_figures(TW_filename, YT_filename):
 
     df_suspended = get_yt_videos_tweets(list_id = get_list_video_id_community_guidelines(YT_filename = YT_filename),
                                         message = 'suspended_community_guidelines',
-                                        filename = filename)
+                                        filename = TW_filename)
 
     df_available = get_yt_videos_tweets(list_id = get_list_available(YT_filename = YT_filename),
                                         message = 'available_no_info_panel',
-                                        filename = filename)
+                                        filename = TW_filename)
 
     create_donut(figure_name = 'tweets_notices_2022_05_13_minet',
                 filename = TW_filename)

@@ -151,8 +151,8 @@ def plot_nested_pie():
 
     handles, labels = ax.get_legend_handles_labels()
 
-    ax.set_title('Youtube Videos fact checked as false in the Condor Dataset', pad = 25, fontsize = 20)
-    save_figure('yt_pie')
+    ax.set_title('Youtube Videos fact checked as false', pad = 25, fontsize = 20)
+    save_figure('yt_pie_2022_06_10')
 
 def get_list_available():
 
@@ -190,7 +190,7 @@ def plot_engagement(df1, df2):
         [0.9], [np.median(df2['view_count'])],
         color='green', edgecolor='black', width=0.8, alpha=0.3
     )
-        ax0.set_xticks([0, 1]),
+    ax0.set_xticks([0, 1])
     ax0.set_xticklabels(['without', 'with'])
     ax0.set_xlabel('information panel')
     ax0.tick_params(axis='x', which='both', length=0)
@@ -216,11 +216,11 @@ def plot_engagement(df1, df2):
     ax1.set_frame_on(False)
 
     fig.tight_layout()
-    save_figure('figure_engagement_videos_yt_median')
+    save_figure('figure_engagement_videos_yt_median_2022_06_10')
 
 if __name__ == '__main__':
 
-    #plot_nested_pie()
+    plot_nested_pie()
     df_engagement_1, df_engagement_2 = get_list_available()
     print(df_engagement_1)
     print(df_engagement_2)

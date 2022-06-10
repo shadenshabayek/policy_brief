@@ -10,7 +10,7 @@ from utils import (import_data,
 pd.options.display.max_colwidth = 300
 pd.options.mode.chained_assignment = None
 
-def get_false_urls ():
+def get_false_urls (group_small_cat):
 
     df = import_data('./tpfc-recent.csv')
 
@@ -18,7 +18,7 @@ def get_false_urls ():
             as_index = False).size().sort_values(by = 'size', ascending = False)
 
     df_agg = df_agg.rename(columns = {'size': 'number of links'})
-
+    print(df_agg)
     print('Condor Dataset by rating : \n (First fact check date',
           df['tpfc_first_fact_check'].min(),
           ') \n (Last fact check date',
@@ -26,8 +26,22 @@ def get_false_urls ():
           ') \n',
           df_agg)
 
-    #save_data(df_agg, 'aggregate_links_condor.csv', 0)
+    count_satire = df_agg.loc[df_agg['tpfc_rating'] == 'satire', 'number of links'].iloc[0]
+    count_opinion = df_agg.loc[df_agg['tpfc_rating'] == 'opinion', 'number of links'].iloc[0]
+    count_prank_generator = df_agg.loc[df_agg['tpfc_rating'] == 'prank generator', 'number of links'].iloc[0]
+    count_prank_altered = df_agg.loc[df_agg['tpfc_rating'] == 'fact checked as altered media', 'number of links'].iloc[0]
+    count_miss = df_agg.loc[df_agg['tpfc_rating'] == 'fact checked as missing context', 'number of links'].iloc[0]
+    drop = ['satire', 'opinion', 'prank generator', 'fact checked as altered media', 'fact checked as missing context']
 
+    if group_small_cat == 1:
+        nb_satire_opinion = count_satire + count_opinion
+        nb_other = count_prank_generator + count_prank_altered + count_miss
+        df_agg = df_agg.append({'tpfc_rating': 'satire or opinion', 'number of links': nb_satire_opinion}, ignore_index=True)
+        df_agg = df_agg.append({'tpfc_rating': 'other', 'number of links': nb_other}, ignore_index=True)
+        df_agg = df_agg[~df_agg['tpfc_rating'].isin(drop)].sort_values(by = 'number of links', ascending = False)
+
+    save_data(df_agg, 'aggregate_links_condor_2022_06_10.csv', 0)
+    print(df_agg)
     df = df[df['tpfc_rating'] == 'fact checked as false']
     return df
 
@@ -105,12 +119,37 @@ def keep_top_99_EU (df):
 
     return df
 
+def get_active_links(df):
+
+    print('there are ', len(df), ' False links in the Condor dataset (10 EU countries since 2020)')
+
+    df_active = df[df['status'] == 200]
+    print('there are ', len(df_active), ' active False links in the Condor dataset (10 EU countries since 2020)')
+
+    df_yt = df_active[df_active['parent_domain'] == 'youtube.com']
+    print('there are ', len(df_yt), ' active youtube links (links opens but might be suspended)' )
+
+    df_yt['yt_video_id'] = df_yt['clean_url'].str.split('=').str[1]
+    #save_data(df_yt, 'youtube_condor_EU_false_links_active.csv', 0)
+
+    df_active['clean_url_256_character'] = df_active['clean_url'].str[:256]
+    #save_data(df_active, 'condor_EU_false_links_active_2022_04_04.csv', 0)
+
+    df['clean_url_256_character'] = df['clean_url'].str[:256]
+    save_data(df, 'condor_EU_false_links_all_2022_05_11.csv', 0)
+
+    return df_active, df_yt
+
 def main():
 
     df_condor = get_false_urls ()
     df, df_Europe = get_continents_top_shares(df_condor)
     df_EU = keep_top_99_EU (df_Europe)
 
+    df = import_data('condor_EU_false_links_report_2022_04_04.csv')
+    df_active, df_yt = get_active_links(df)
+
 if __name__=="__main__":
 
-    main()
+    #main()
+    get_false_urls (group_small_cat = 1)

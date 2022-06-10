@@ -34,7 +34,7 @@ def import_data(file_name):
 def save_figure(figure_name):
 
     figure_path = os.path.join('.', 'figures', figure_name)
-    plt.savefig(figure_path, bbox_inches='tight')
+    plt.savefig(figure_path, bbox_inches='tight', dpi=1000)
     print('The {} figure is saved.'.format(figure_name))
 
 def save_data(df, file_name, append):

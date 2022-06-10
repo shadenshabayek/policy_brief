@@ -33,7 +33,7 @@ def create_pie_figure(x, y, filename, figure_name, title):
 
 def create_donut(x, y, filename, figure_name, title):
 
-    fig, ax = plt.subplots(figsize=(6, 15), subplot_kw=dict(aspect="equal"))
+    fig, ax = plt.subplots(figsize=(8, 15), subplot_kw=dict(aspect="equal"))
     df = import_data(filename)
     l = len(df[x].to_list())
     list_labels =[]
@@ -54,7 +54,7 @@ def create_donut(x, y, filename, figure_name, title):
     kw = dict(arrowprops=dict(arrowstyle="-"),
               bbox=bbox_props, zorder=0, va="center")
 
-    plt.text(0, 0, "Third-Party\nFact-checked URLs\n in the\n Condor Dataset\n(June 2021)", ha='center', va='center', fontsize=14)
+    plt.text(0, 0, "Third-Party\nFact-checked URLs\n (June 2021)", ha='center', va='center', fontsize=14)
 
     for i, p in enumerate(wedges):
 
@@ -65,7 +65,7 @@ def create_donut(x, y, filename, figure_name, title):
         connectionstyle = "angle,angleA=0,angleB={}".format(ang)
         kw["arrowprops"].update({"connectionstyle": connectionstyle})
         ax.annotate(ratings[i], xy=(x, y), xytext=(1.3*np.sign(x), 1.3*y),
-                    horizontalalignment=horizontalalignment, **kw)
+                    horizontalalignment=horizontalalignment, **kw, fontsize=16)
 
     save_figure(figure_name)
 
@@ -73,8 +73,8 @@ def main():
 
     create_donut(x = 'tpfc_rating',
                       y = 'number of links',
-                      filename = 'aggregate_links_condor.csv',
-                      figure_name = 'donut_aggregate_links_condor',
+                      filename = 'aggregate_links_condor_2022_06_10.csv',
+                      figure_name = 'donut_aggregate_links_condor_2022_06_10',
                       title = '')
 
 if __name__ == '__main__':
