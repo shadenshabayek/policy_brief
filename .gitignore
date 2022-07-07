@@ -30,3 +30,5 @@ __pycache__
 *.mod
 
 !data/country_codes_wikipedia.csv
+code/collect_bz_eiorg.sh
+code/collect_bz_reseauinter.sh

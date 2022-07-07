@@ -30,15 +30,11 @@ def get_inactive_video_message(video_id):
 
     browser.quit()
 
-    # print(unavailable_video_message)
-    # print(removed_video_message)
-    # print(information_panel_content)
-
     return unavailable_video_message, removed_video_message, information_panel_content
 
-def get_videos():
+def get_videos(input_filename):
 
-    df = import_data('videos_youtube_condor_EU_false_links_active_2022-04-04.csv')
+    df = import_data(input_filename)
     df['video_id'] = df['video_id'].fillna('not found')
 
     list_video_id = df['yt_video_id'].tolist()
@@ -48,11 +44,11 @@ def get_videos():
 
     return list_video_id, list_url, list_published_at, list_title
 
-def collect_messages():
+def collect_messages(input_filename, output_filename):
 
-    list_video_id, list_url, list_published_at, list_title = get_videos()
+    list_video_id, list_url, list_published_at, list_title = get_videos(input_filename)
 
-    with open('./data/messages_videos_youtube_condor_EU_false_links_active_2022_04_04.csv', 'w+') as csv_file:
+    with open(output_filename, 'w+') as csv_file:
 
         writer = csv.writer(csv_file, delimiter=',')
         writer.writerow(['video_id',
@@ -73,7 +69,13 @@ def collect_messages():
                              list_url[i],
                              list_published_at[i],
                              list_title[i]])
+def main():
+
+    input_filename = 'videos_youtube_condor_EU_false_links_active_2022-04-04.csv'
+    output_filename = './data/messages_videos_youtube_condor_EU_false_links_active_2022_04_04.csv'
+
+    collect_messages(input_filename, output_filename)
 
 if __name__ == '__main__':
 
-    collect_messages()
+    main()
